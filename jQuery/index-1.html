@@ -31,6 +31,10 @@
       $("#target1").prop("disabled", true);
       // Change text inside an element using .html():
       $("h3").html("<em>jQuery Play</em>");
+      // Remove an element using .remove():
+      $("#target4").remove();
+      // Move elements to another element using .appendTo():
+      $("#target2").appendTo("#right-well");
     });
   </script>
   <div class="container-fluid">

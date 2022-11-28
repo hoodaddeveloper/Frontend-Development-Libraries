@@ -19,8 +19,12 @@
   <!-- jQuery Animation -->
   <script>
     $(document).ready(function () {
+      // Select a target using the type:
       $("button").addClass("animated bounce");
+      // Select a target using the class:
       $(".well").addClass("animated shake");
+      // Select a target using the id:
+      $("#target3").addClass("animated fadeout");
     });
   </script>
   <div class="container-fluid">
@@ -39,7 +43,7 @@
         <h4>#right-well</h4>
         <div class="well" id="right-well">
           <button class="btn btn-secondary target" id="target4">#target4</button>
-          <button class="btn btn-secondary target" id="target5">#target5</button>
+          <button class="btn btn-secondary animate__animated animate__bounce" id="target5">#target5</button>
           <button class="btn btn-secondary target" id="target6">#target6</button>
         </div>
       </div>

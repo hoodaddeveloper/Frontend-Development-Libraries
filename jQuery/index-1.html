@@ -19,19 +19,22 @@
   <!-- jQuery Animation -->
   <script>
     $(document).ready(function () {
-      // Select an element using the type:
+      // Select an element using its type:
       $("button").addClass("animated bounce");
-      // Select an element using the class:
+      // Select an element using its class:
       $(".well").addClass("animated shake");
-      // Select an element using the id:
+      // Select an element using its id:
       $("#target3").addClass("animated fadeout");
-      $("#target1").addClass("btn-primary");
+      // Change the CSS color of an element using .css():
+      $("#target1").css("color", "red");
+      // Disable an element Using .prop()
+      $("#target1").prop("disabled", true);
     });
   </script>
   <div class="container-fluid">
     <!-- Animated Title -->
     <h3 class="text-primary text-center animate__animated animate__bounce">jQuery Playground</h3>
-    <div class="row">
+    <div class="row text-center">
       <div class="col-xs-6">
         <h4>#left-well</h4>
         <div class="well" id="left-well">

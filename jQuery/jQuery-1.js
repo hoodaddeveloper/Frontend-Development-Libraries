@@ -1,4 +1,4 @@
-// jQuery codes
+// jQuery codes:
 
 // Select an element using its type:
 $("button").addClass("animated bounce");
@@ -38,7 +38,13 @@ $("span").css("color", "red");
 $("ul li:first").css("color", "red");
 $("ul li:last").css("color", "red");
 $("ul li:even").css("background", "lightgray");
-$("ul li:even").css("width", "70px")
+$("ul li:even").css("width", "70px");
 $("ul li:even").css("margin", "auto");
 $("ul li:nth-child(2").html("new item");
 $("ul li:nth-child(4)").html("new item");
+
+// jQuery events:
+
+$(".btn1").click(function () {
+  alert("You clicked!");
+});

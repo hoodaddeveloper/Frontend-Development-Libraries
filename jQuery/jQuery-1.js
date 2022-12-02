@@ -40,7 +40,7 @@ $("ul li:last").css("color", "red");
 $("ul li:even").css("background", "lightgray");
 $("ul li:even").css("width", "70px");
 $("ul li:even").css("margin", "auto");
-$("ul li:nth-child(2").html("new item");
+$("ul li:nth-child(2)").html("new item");
 $("ul li:nth-child(4)").html("new item");
 
 // jQuery events:
@@ -53,4 +53,9 @@ $(".btn1").click(function () {
 // Show an element
 $(".btn2").click(function () {
   $("ul").show();
+});
+
+// If we hover first child of the list item, all of spans will change their backgrounds
+$("ul li:nth-child(1)").hover(function () {
+  $("span").css("background", "lightgray");
 });

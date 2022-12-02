@@ -45,6 +45,12 @@ $("ul li:nth-child(4)").html("new item");
 
 // jQuery events:
 
+// Hide an element
 $(".btn1").click(function () {
-  alert("You clicked!");
+  $("ul").hide();
+});
+
+// Show an element
+$(".btn2").click(function () {
+  $("ul").show();
 });

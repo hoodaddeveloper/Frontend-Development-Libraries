@@ -35,3 +35,5 @@ $(".target:odd").addClass("animated shake");
 $(".target7").html("Hello");
 $("#target8").html("Hoodad");
 $("span").css("color", "red");
+$("ul li:first").css("color", "red");
+$("ul li:last").css("color", "red");

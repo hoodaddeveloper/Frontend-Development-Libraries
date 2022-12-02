@@ -55,6 +55,16 @@ $(".btn2").click(function () {
   $("ul").show();
 });
 
+// Show & hide with sapn
+$(".btn3").mouseenter(function () {
+  $("span").toggle();
+});
+
+// Show & hide with sapn
+$(".btn3").mouseleave(function () {
+  $("span").toggle();
+});
+
 // If we hover first child of the list item, all of spans will change their backgrounds
 $("ul li:nth-child(1)").hover(function () {
   $("span").css("background", "lightgray");

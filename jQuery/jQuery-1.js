@@ -42,6 +42,3 @@ $("ul li:even").css("width", "70px")
 $("ul li:even").css("margin", "auto");
 $("ul li:nth-child(2").html("new item");
 $("ul li:nth-child(4)").html("new item");
-$('input["type=button"]')
-    < value="button">
-    <input type="submit"

@@ -37,3 +37,6 @@ $("#target8").html("Hoodad");
 $("span").css("color", "red");
 $("ul li:first").css("color", "red");
 $("ul li:last").css("color", "red");
+$("ul li:even").css("background", "gray");
+$("ul li:even").css("width", "70px")
+$("ul li:even").css("margin", "auto");

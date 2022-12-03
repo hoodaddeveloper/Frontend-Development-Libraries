@@ -55,12 +55,12 @@ $(".btn2").click(function () {
   $("ul").show();
 });
 
-// Show & hide with sapn
+// Show & hide with toggle
 $(".btn3").mouseenter(function () {
   $("span").toggle();
 });
 
-// Show & hide with sapn
+// Show & hide with toggle
 $(".btn3").mouseleave(function () {
   $("span").toggle();
 });

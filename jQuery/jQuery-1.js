@@ -72,5 +72,13 @@ $("ul li:nth-child(1)").hover(function () {
 
 // If we click on the input elements, they will change their background to red
 $("input").focus(function () {
-  $(this).css("background", "red");
+  $(this).css("background", "lightgreen");
+});
+
+$("input").keyup(function (e) {
+  alert(e.target.value);
+});
+
+$("select#gender").change(function (e) {
+  alert(e.target.value);
 });

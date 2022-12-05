@@ -76,9 +76,14 @@ $("input").focus(function () {
 });
 
 $("input").keyup(function (e) {
-  alert(e.target.value);
+  console.log(e.target.value);
 });
 
 $("select#gender").change(function (e) {
-  alert(e.target.value);
+  console.log(e.target.value);
+});
+
+$("form").submit(function (e) {
+  e.preventDefault();
+  console.log("Submitted");
 });

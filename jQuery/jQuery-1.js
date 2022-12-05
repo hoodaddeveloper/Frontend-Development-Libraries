@@ -65,7 +65,12 @@ $(".btn3").mouseleave(function () {
   $("span").toggle();
 });
 
-// If we hover first child of the list item, all of spans will change their backgrounds
+// If we hover on the first child of the list item, all of spans will change their backgrounds
 $("ul li:nth-child(1)").hover(function () {
   $("span").css("background", "lightgray");
+});
+
+// If we click on the input elements, they will change their background to red
+$("input").focus(function () {
+  $(this).css("background", "red");
 });

@@ -10,5 +10,4 @@ $(document).ready(function () {
   });
 
   $("h3").css("textAlign", "center");
-  $("button").css("margin", "auto");
 });

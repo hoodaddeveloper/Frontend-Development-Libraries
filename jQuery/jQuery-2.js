@@ -11,11 +11,11 @@ $(document).ready(function () {
 
   $("h3").css("textAlign", "center");
   
-  $("ul").prepend("<li>Prepend List item</li>");
-  $("ul").append("<li>Appened List item</li>");
+  $("ul.list-unstyled").prepend("<li>Prepend List item</li>");
+  $("ul.list-unstyled").append("<li>Appened List item</li>");
   
-  $("ul").before("<h5>Before ul added item</h5>");
-  $("ul").after("<h5>After ul added item</h5>");
+  $("ul.list-unstyled").before("<h5>Before ul added item</h5>");
+  $("ul.list-unstyled").after("<h5>After ul added item</h5>");
   // Wrap (change) list items to anything
-  $("li").wrap("<i></i>");
+  $("ul.list-unstyled").wrap("<i></i>");
 });

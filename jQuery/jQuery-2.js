@@ -10,4 +10,6 @@ $(document).ready(function () {
   });
 
   $("h3").css("textAlign", "center");
+  $("ul").prepend("<li>Prepend List Item</li>");
+  $("ul").append("<li>Appened List Item</li>");
 });

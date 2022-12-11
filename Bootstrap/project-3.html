@@ -13,37 +13,44 @@
 <body>
   <!-- Navbar -->
   <div class="bg-secondary shadow">
-    <nav class="navbar ps-2 py-0">
+    <nav class="container navbar ps-2 py-0">
       <a class="navbar-brand small text-light" style="font-size:12px;">Opening Hours: 8:00 - 16:00 Uhr</a>
       <ul class="navbar-nav mx-auto mb-1">
-        <li><a class="navbar-brand small text-light" style="font-size:12px;">Home</a></li>
+        <li>
+          <a class="navbar-brand small text-light" style="font-size:12px;">Camp Raccon City
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+              class="ms-2 bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
+          </a>
+        </li>
       </ul>
       <a class="navbar-brand float-end small text-light" style="font-size:12px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-          class="me-2 mb-1 bi bi-telephone-fill" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+          class="me-2 bi bi-telephone-fill" viewBox="0 0 16 16">
           <path fill-rule="evenodd"
             d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-        </svg>Tel: 0123 222 333 44</a>
+        </svg>0123 222 333 44</a>
     </nav>
   </div>
   <!-- Header -->
-  <section class="container">
+  <section class="container mt-3">
     <div class="row">
-      <span class="h2 text-center mt-4">TRICELL CORP.</span>
-      <div class="col">
+      <nav class="navbar">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
           viewBox="0 0 16 16">
           <path fill-rule="evenodd"
             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
         </svg>
-        <span class="float-end h5">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            class="me-1 bi bi-caret-down-fill" viewBox="0 0 16 16">
-            <path
-              d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-          </svg>Welcome
-        </span>
-      </div>
+        <span class="h2 text-center">TRICELL CORPORATION</span>
+        <span class="float-end">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="mb-1 me-2 bi bi-person-fill"
+            viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+          </svg>
+          Welcome Wesker!</span>
+      </nav>
     </div>
     <br><br>
     <!-- Pictures -->
@@ -72,7 +79,7 @@
   <br><br>
   <!-- Footer -->
   <div class="text-bg-dark">
-    <footer class="container pt-3">
+    <footer class="container pt-5">
       <div class="row small">
         <div class="col-md-3">
           <h3 class="border-bottom border-1 w-50 fs-5 border-light">Standorte</h3>
@@ -141,7 +148,8 @@
         </div>
       </div>
       <div class="text-start py-2" style="font-size:10px;">
-        <span>AGB</span><span class="ms-5">PRIVACY POLICY</span><span class="ms-5">IMPRESSUM</span><span class="ms-5">OTHER</span>
+        <span>AGB</span><span class="ms-5">PRIVACY POLICY</span><span class="ms-5">IMPRESSUM</span><span
+          class="ms-5">OTHER</span>
       </div>
     </footer>
   </div>

@@ -1,9 +1,14 @@
 /* Sass variables */
+/* Sass codes */
 body {
   background: rgb(203, 235, 246);
   font-size: 30px;
 }
 
+div {
+  /* Aligns every text inside all childs to center */
+  text-align: center;
+}
 div h3 {
   text-align: center;
   color: rgb(8, 107, 8);
@@ -12,4 +17,8 @@ div p {
   border: 3px groove white;
   padding: 15px;
   color: purple;
+}
+div button {
+  background: rgb(54, 61, 255);
+  color: white;
 }/*# sourceMappingURL=style.css.map */

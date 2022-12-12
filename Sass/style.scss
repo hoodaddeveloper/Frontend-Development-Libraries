@@ -2,14 +2,19 @@
 $body: rgb(203, 235, 246);
 $h3Texts: rgb(8, 107, 8);
 $paragrafs: purple;
+$buttons: rgb(54, 61, 255);
 $borders: white;
 
+/* Sass codes */
 body {
   background: $body;
   font-size: 30px;
 }
 
 div {
+  /* Aligns every text inside all childs to center */
+  text-align: center;
+
   h3 {
     text-align: center;
     color: $h3Texts;
@@ -19,5 +24,9 @@ div {
     border: 3px groove $borders;
     padding: 15px;
     color: $paragrafs;
+  }
+  button {
+    background: $buttons;
+    color: $borders;
   }
 }

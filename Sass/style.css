@@ -1,0 +1,15 @@
+body {
+  background: rgb(203, 235, 246);
+  font-size: 30px;
+}
+
+h3 {
+  text-align: center;
+  color: rgb(8, 107, 8);
+}
+
+p {
+  border: 3px groove white;
+  padding: 15px;
+  color: purple;
+}/*# sourceMappingURL=style.css.map */

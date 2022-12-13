@@ -5,20 +5,25 @@ body {
   font-size: 30px;
 }
 
-div {
-  /* Aligns every text inside all childs to center */
+/* Aligns every text inside all childs of ".body" to center */
+.body {
   text-align: center;
 }
-div h3 {
+.body h3 {
   text-align: center;
   color: rgb(8, 107, 8);
 }
-div p {
+.body p {
   border: 3px groove white;
   padding: 15px;
   color: purple;
 }
-div button {
+.body button {
   background: rgb(54, 61, 255);
   color: white;
+  width: 100px;
+}
+.body button:hover {
+  background-color: red;
+  transition: 0.3s;
 }/*# sourceMappingURL=style.css.map */

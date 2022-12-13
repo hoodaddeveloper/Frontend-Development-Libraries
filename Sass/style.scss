@@ -11,8 +11,12 @@ body {
   font-size: 30px;
 }
 
-div {
-  /* Aligns every text inside all childs to center */
+.header {
+  
+}
+
+/* Aligns every text inside all childs of ".body" to center */
+.body {
   text-align: center;
 
   h3 {
@@ -25,8 +29,14 @@ div {
     padding: 15px;
     color: $paragrafs;
   }
+
   button {
     background: $buttons;
     color: $borders;
+    width:100px;
+    &:hover {
+      background-color: red;
+      transition: 0.3s;
+    }
   }
 }

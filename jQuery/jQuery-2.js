@@ -22,33 +22,38 @@ $(document).ready(function () {
   // Buttons animations
 
   // FadeOut the box by clicking
-  $("#fadeOut").click(function () {
+  $(".fadeOut").click(function () {
     $(".box").fadeOut();
   });
   // FadeIn the box by clicking
-  $("#fadeIn").click(function () {
+  $(".fadeIn").click(function () {
     $(".box").fadeIn();
   });
   // FadeToggle the box by clicking
-  $("#fadeToggle").click(function () {
+  $(".fadeToggle").click(function () {
     $(".box").fadeToggle("");
 
     // $(".box").fadeToggle("fast");
     // $(".box").fadeToggle("slow");
   });
 
-  // SlideUp slow the box by clicking
-  $("#slideUp").click(function () {
+  // SlideUp the box slowly by clicking
+  $(".slideUp").click(function () {
     $(".box").slideUp("slow");
   });
 
-  // SlideDown fast the box by clicking
-  $("#slideDown").click(function () {
+  // SlideDown the box fast by clicking
+  $(".slideDown").click(function () {
     $(".box").slideDown("fast");
   });
 
-  // SlideToggle the box by clicking
-  $("#slideToggle").click(function () {
-    $(".box").slideToggle();
+  // SlideToggle the box by clicking in 3 seconds
+  $(".slideToggle").click(function () {
+    $(".box").slideToggle(3000);
+  });
+
+  // Stop the animation by clicking
+  $(".stop").click(function () {
+    $(".box").stop();
   });
 });

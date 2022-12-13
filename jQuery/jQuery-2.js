@@ -58,4 +58,18 @@ $(document).ready(function () {
   $(".stop").click(function () {
     $(".box").stop();
   });
+
+  // Move to right animation by clicking
+  $(".right").click(function () {
+    $(".box").animate({
+      left: 100
+    });
+  });
+
+  // Move to left animation by clicking
+  $(".left").click(function () {
+    $(".box").animate({
+      right: 100
+    });
+  });
 });

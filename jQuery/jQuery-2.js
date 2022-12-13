@@ -62,14 +62,22 @@ $(document).ready(function () {
   // Move to right animation by clicking
   $(".right").click(function () {
     $(".box").animate({
-      left: 100
+      left: 100,
     });
   });
 
   // Move to left animation by clicking
   $(".left").click(function () {
     $(".box").animate({
-      right: 100
+      right: 100,
+    });
+  });
+
+  // Move right & left by clicking
+  $(".right_left").click(function () {
+    $(".box").animate({
+      left: 300,
+      right: 100,
     });
   });
 });

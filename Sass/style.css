@@ -9,7 +9,7 @@ body {
 /* Using Sass function */
 .header {
   background: lightgray;
-  border: 2px solid;
+  border: 4px solid;
   border-radius: 10px;
   padding: 5px 0 10px 0;
 }
@@ -29,7 +29,7 @@ body {
 }
 .body button {
   background: lightgray;
-  border: 2px solid;
+  border: 4px solid;
   border-radius: 10px;
   padding: 5px 0 10px 0;
   width: 100px;

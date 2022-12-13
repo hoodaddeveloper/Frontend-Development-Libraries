@@ -4,6 +4,7 @@ $h3Texts: rgb(8, 107, 8);
 $paragrafs: purple;
 $buttons: rgb(54, 61, 255);
 $borders: white;
+$bordertickness: 2px;
 
 /* Sass codes */
 body {
@@ -14,7 +15,7 @@ body {
 /* Sass function */
 @mixin firstFunction {
   background: lightgray;
-  border: 2px solid;
+  border: $bordertickness * 2 solid;
   border-radius: 10px;
   padding: 5px 0 10px 0;
 }

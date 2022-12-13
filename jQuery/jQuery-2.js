@@ -47,9 +47,11 @@ $(document).ready(function () {
     $(".box").slideDown("fast");
   });
 
-  // SlideToggle the box by clicking in 3 seconds
+  // SlideToggle the box in 3 seconds and alert
   $(".slideToggle").click(function () {
-    $(".box").slideToggle(3000);
+    $(".box").slideToggle(3000, function () {
+      alert("Animation finished!");
+    });
   });
 
   // Stop the animation by clicking

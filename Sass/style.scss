@@ -41,7 +41,7 @@ body {
 
   button {
     @include firstFunction();
-    width:100px;
+    width: 100px;
     &:hover {
       background-color: red;
       transition: 0.3s;

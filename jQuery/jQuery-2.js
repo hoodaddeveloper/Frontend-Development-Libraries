@@ -31,6 +31,24 @@ $(document).ready(function () {
   });
   // FadeToggle the box by clicking
   $("#fadeToggle").click(function () {
-    $(".box").fadeToggle();
+    $(".box").fadeToggle("");
+
+    // $(".box").fadeToggle("fast");
+    // $(".box").fadeToggle("slow");
+  });
+
+  // SlideUp slow the box by clicking
+  $("#slideUp").click(function () {
+    $(".box").slideUp("slow");
+  });
+
+  // SlideDown fast the box by clicking
+  $("#slideDown").click(function () {
+    $(".box").slideDown("fast");
+  });
+
+  // SlideToggle the box by clicking
+  $("#slideToggle").click(function () {
+    $(".box").slideToggle();
   });
 });

@@ -10,12 +10,27 @@ $(document).ready(function () {
   });
 
   $("h3").css("textAlign", "center");
-  
+
   $("ul.list-unstyled").prepend("<li>Prepend List item</li>");
   $("ul.list-unstyled").append("<li>Appened List item</li>");
-  
+
   $("ul.list-unstyled").before("<h5>Before ul added item</h5>");
   $("ul.list-unstyled").after("<h5>After ul added item</h5>");
   // Wrap (change) list items to anything
   $("ul.list-unstyled").wrap("<i></i>");
+
+  // Buttons animations
+
+  // FadeOut the box by clicking
+  $("#fadeOut").click(function () {
+    $(".box").fadeOut();
+  });
+  // FadeIn the box by clicking
+  $("#fadeIn").click(function () {
+    $(".box").fadeIn();
+  });
+  // FadeToggle the box by clicking
+  $("#fadeToggle").click(function () {
+    $(".box").fadeToggle();
+  });
 });

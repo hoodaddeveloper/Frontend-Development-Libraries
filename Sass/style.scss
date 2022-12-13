@@ -1,5 +1,5 @@
 /* Sass variables */
-$body: rgb(203, 235, 246);
+$body: rgb(214, 238, 246);
 $h3Texts: rgb(8, 107, 8);
 $paragrafs: purple;
 $buttons: rgb(54, 61, 255);
@@ -11,15 +11,24 @@ body {
   font-size: 30px;
 }
 
+/* Sass function */
+@mixin firstFunction {
+  background: lightgray;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 5px 0 10px 0;
+}
+
+/* Using Sass function */
 .header {
-  
+  @include firstFunction();
 }
 
 /* Aligns every text inside all childs of ".body" to center */
 .body {
   text-align: center;
 
-  h3 {
+  h5 {
     text-align: center;
     color: $h3Texts;
   }
@@ -31,8 +40,7 @@ body {
   }
 
   button {
-    background: $buttons;
-    color: $borders;
+    @include firstFunction();
     width:100px;
     &:hover {
       background-color: red;

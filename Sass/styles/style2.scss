@@ -1,0 +1,26 @@
+
+/* Variables */
+
+$font-color: green;
+$font-size: 30px;
+
+/* Sass codes */
+
+body {
+  /* Styling body */
+  padding: 20px;
+  background: lightblue;
+  /* Styling h2 */
+  h2 {
+    color: $font-color;
+  }
+  /* Styling p */
+  p {
+    background: yellow;
+    width: 25%;
+    border: 1px solid;
+    padding:10px;
+    font-size: $font-size;
+    color: $font-color;
+  }
+}

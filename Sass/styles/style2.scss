@@ -4,8 +4,8 @@
 
 /* Variables */
 
-$font-color: green;
 $font-size: 30px;
+$font-color: green;
 
 /* Sass codes */
 
@@ -19,11 +19,11 @@ body {
   }
   /* Styling p */
   p {
-    background: yellow;
     width: 25%;
-    border: 1px solid;
     padding:10px;
-    font-size: $font-size;
+    border: 1px solid;
     color: $font-color;
+    background: yellow;
+    font-size: $font-size;
   }
 }

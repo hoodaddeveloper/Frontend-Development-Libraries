@@ -1,25 +1,25 @@
 @use "partial";
 
 /* Sass variables */
-$body: rgb(214, 238, 246);
-$h3Texts: rgb(8, 107, 8);
-$paragrafs: purple;
-$buttons: rgb(54, 61, 255);
 $borders: white;
 $bordertickness: 2px;
+$paragrafs: purple;
+$h3Texts: rgb(8, 107, 8);
+$body: rgb(214, 238, 246);
+$buttons: rgb(54, 61, 255);
 
 /* Sass codes */
 body {
-  background: $body;
   font-size: 30px;
+  background: $body;
 }
 
 /* Sass function */
 @mixin firstFunction {
-  background: lightgray;
-  border: $bordertickness * 2 solid;
   border-radius: 10px;
   padding: 5px 0 10px 0;
+  background: lightgray;
+  border: $bordertickness * 2 solid;
 }
 
 /* Using Sass function */
@@ -32,22 +32,22 @@ body {
   text-align: center;
 
   h5 {
-    text-align: center;
     color: $h3Texts;
+    text-align: center;
   }
 
   p {
-    border: 3px groove $borders;
     padding: 15px;
     color: $paragrafs;
+    border: 3px groove $borders;
   }
 
   button {
     @include firstFunction();
     width: 100px;
     &:hover {
-      background-color: red;
       transition: 0.3s;
+      background-color: red;
     }
   }
 }

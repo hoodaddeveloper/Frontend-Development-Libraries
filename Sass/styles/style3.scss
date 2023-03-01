@@ -1,35 +1,22 @@
 /* Sass Variables */
-$primaryHeader: #ce5ef4;
-$primarybutton: #ce5ef4;
+$primaryColor: #ce5ef4;
 
-$warningHeader: #f9be40;
-$warningButton: #f9be40;
+$warningColor: #f9be40;
 
-$successHeader: #09d37b;
-$successButton: #09d37b;
+$successColor: #09d37b;
 
-/* Header Colors */
-h2 .bg-primary {
-  background: $primaryHeader;
-}
-
-h2 .bg-warning {
-  background: $warningHeader;
-}
-
-h2 .bg-success {
-  background: $successHeader;
-}
-
-/* Button Colors */
+/* Header & Button Colors */
+h2 .bg-primary,
 button .btn-primary {
-  background: $primarybutton;
+  background: $primaryColor;
 }
 
+h2 .bg-warning,
 button .btn-warning {
-  background: $warningButton;
+  background: $warningColor;
 }
 
+h2 .bg-success,
 button .btn-success {
-  background: $successButton;
+  background: $successColor;
 }

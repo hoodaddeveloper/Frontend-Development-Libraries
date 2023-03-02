@@ -1,36 +1,71 @@
-/* Variables */
-$primaryColor: #ce5ef4;
-$warningColor: #f9be40;
-$successHeader: #09d37b;
-$paragraphColor: #656565;
+// My Custom Variables
+$danger: #ff5656;
+$primary: #d400ff;
+$warning: #eeae00;
+$success: #09d37b;
+$secondary: #4c4b4b;
 
-/* Header Colors */
-h2 .bg-primary {
-  background: $primaryHeader;
+// Import Bootstrap
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Sass Function
+@mixin buttonsCenter {
+  margin: 0 auto;
+  text-align: center;
 }
 
-h2 .bg-warning {
-  background: $warningHeader;
+div.button {
+  @include buttonsCenter();
 }
 
-h2 .bg-success {
-  background: $successHeader;
+// Header Colors
+h2.bg-primary {
+  background: $primary;
 }
 
-/* Button Colors */
-button .btn-primary {
-  color: $primarybutton;
+h2.bg-warning {
+  background: $warning;
 }
 
-button .btn-warning {
-  color: $warningButton;
+h2.bg-success {
+  background: $success;
 }
 
-button .btn-success {
-  color: $successButton;
+// Button Colors
+button.btn-primary {
+  background: $primary;
+  &:hover {
+    color:#913fac;
+  }
 }
 
-/* Paragraph Text Color */
+button.btn-warning {
+  background: $warning;
+  &:hover {
+    color:#bd902e;
+  }
+}
+
+button.btn-success {
+  background: $success;
+  &:hover {
+    color:#039254;
+  }
+}
+
+// Paragraph Text Color
 p {
-  color: $paragraphColor;
+  color: $secondary;
+}
+
+// Sass Operators
+div.alert {
+  cursor: pointer;
+  width: 100% / 2;
+  /* width: 100% - 20%; */
 }

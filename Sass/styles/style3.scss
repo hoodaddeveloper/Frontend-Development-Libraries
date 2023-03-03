@@ -5,17 +5,8 @@ $warning: #eeae00;
 $success: #09d37b;
 $secondary: #4c4b4b;
 
-// Import Bootstrap
-@import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/root";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-// Sass Function
+// Sass Functions
 @mixin buttonsCenter {
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -23,38 +14,63 @@ div.button {
   @include buttonsCenter();
 }
 
+@mixin textShadow {
+  text-shadow: 1px 1px 1px #000000;
+}
+
+p {
+  @include textShadow();
+}
+
 // Header Colors
 h2.bg-primary {
-  background: $primary;
+  background: $primary !important;
 }
 
 h2.bg-warning {
-  background: $warning;
+  background: $warning !important;
 }
 
 h2.bg-success {
-  background: $success;
+  background: $success !important;
 }
 
 // Button Colors
 button.btn-primary {
   background: $primary;
+  border-color: $primary;
   &:hover {
-    color:#913fac;
+    background: darken($primary, 20);
   }
 }
 
 button.btn-warning {
   background: $warning;
+  border-color: $warning;
   &:hover {
-    color:#bd902e;
+    background: darken($warning, 20);
   }
 }
 
 button.btn-success {
   background: $success;
+  border-color: $success;
   &:hover {
-    color:#039254;
+    background: darken($success, 20);
+  }
+}
+
+button.btn-secondary {
+  background: $secondary;
+  border-color: $secondary;
+  &:hover {
+    background: darken($secondary, 20);
+  }
+}
+
+div.buttons {
+  button {
+    height: 0 + 50px * 2;
   }
 }
 
@@ -65,7 +81,18 @@ p {
 
 // Sass Operators
 div.alert {
+  transition: 1s;
   cursor: pointer;
-  width: 100% / 2;
-  /* width: 100% - 20%; */
+  width: 60% - 20%;
+  margin: 20px auto;
+  &:hover {
+    width: 60%;
+    transition: 1s;
+    background: lighten($danger, 30);
+  }
+}
+
+// Heading Text Align
+h2:hover {
+  text-align: center;
 }
